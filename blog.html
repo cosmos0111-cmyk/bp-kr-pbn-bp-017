@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-warm-grid">
-    <title>고양 홈페이지 제작 비용, 왜 이렇게 복잡할까? | BPAAS</title>
-    <meta name="description" content="고양에서 홈페이지 제작을 고민하시나요? 복잡한 견적표 대신, 진짜 필요한 비용과 퀄리티의 관계를 친절하게 설명해 드립니다. 010-6279-0862">
-    <meta name="keywords" content="고양 홈페이지 제작 비용, 홈페이지 제작 견적, 반응형 웹제작, 고양시 웹디자인">
-    <link rel="canonical" href="https://kr-pbn-bp-017.pages.dev/blog/cost-guide">
-    <meta property="og:title" content="고양 홈페이지 제작 비용 가이드 | BPAAS">
-    <meta property="og:description" content="고양 홈페이지 제작, 도대체 얼마가 적정 가격일까요? 속지 않고 현명하게 준비하는 방법을 알려드립니다.">
-    <meta property="og:url" content="https://kr-pbn-bp-017.pages.dev/blog/cost-guide">
-    <meta property="og:type" content="article">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>고양 홈페이지 제작 비용, 전문가가 솔직하게 정리해 드립니다.</title>
+    <meta name="description" content="고양 홈페이지 제작 비용이 궁금하신가요? 견적 산출 방식부터 피해야 할 함정까지, 웹 에이전시 대표가 업계의 숨겨진 이야기를 솔직하게 풀어냅니다.">
+    <meta name="keywords" content="고양 홈페이지 제작 비용, 고양시 웹디자인, 홈페이지 제작 견적, 웹 에이전시, 포트폴리오 사이트">
+    <link rel="canonical" href="https://kr-pbn-bp-017.pages.dev">
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="고양 홈페이지 제작 비용, 전문가가 솔직하게 정리해 드립니다.">
+    <meta property="og:description" content="보수적인 견적부터 초저가 함정까지, 고양시 내 웹 제작 시장의 진짜 이야기를 확인하세요.">
+    <meta property="og:image" content="https://kr-pbn-bp-017.pages.dev/og-image.jpg">
+    <meta property="og:url" content="https://kr-pbn-bp-017.pages.dev">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <style>
+        /* CSS 핵심: 이전 페이지와 동일한 디자인 시스템 재사용 */
         :root {
             --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            --color-bg: #F9F9F7;
-            --color-text: #1A1A1A;
-            --color-accent: #E63946;
-            --color-border: #E0E0E0;
-            --spacing-unit: 24px;
+            --color-bg: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-sub: #666666;
+            --color-accent: #000000;
+            --color-border: #e5e5e5;
+            --spacing-unit: 1rem;
+            --container-width: 1024px;
+            --header-height: 80px;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: var(--font-main);
             background-color: var(--color-bg);
@@ -33,306 +45,386 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .container {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s;
         }
 
-        /* Navigation */
-        .nav {
-            border-bottom: 1px solid var(--color-border);
-            padding: 20px 0;
-            background: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        a:hover {
+            opacity: 0.6;
         }
-        .nav-inner {
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Nav */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .nav-logo {
+
+        .logo {
+            font-size: 1.5rem;
             font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-            color: var(--color-text);
-            letter-spacing: -0.5px;
+            letter-spacing: -0.03em;
         }
-        .nav ul {
+
+        .nav-links {
             display: flex;
-            list-style: none;
-            gap: 32px;
+            gap: 2rem;
         }
-        .nav a {
-            text-decoration: none;
-            color: #555;
+
+        .nav-links a {
             font-size: 0.95rem;
-            transition: color 0.3s;
+            font-weight: 500;
         }
-        .nav a:hover { color: var(--color-accent); }
-        .nav-cta {
-            background: var(--color-text);
-            color: #fff !important;
-            padding: 8px 16px;
+
+        .cta-button {
+            background-color: var(--color-accent);
+            color: #fff;
+            padding: 0.6rem 1.2rem;
             border-radius: 4px;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-            line-height: 1.3;
-        }
-        .hero p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Content Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 40px;
-            margin-bottom: 80px;
-        }
-        
-        .grid-item {
-            grid-column: span 12;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-        }
-
-        /* Blog Content Styles */
-        .blog-content h2 {
-            font-size: 1.8rem;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        .blog-content h3 {
-            font-size: 1.4rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        .blog-content p {
-            margin-bottom: 24px;
-            font-size: 1.05rem;
-            color: #333;
-        }
-        .blog-content ul {
-            margin-bottom: 24px;
-            padding-left: 20px;
-        }
-        .blog-content li {
-            margin-bottom: 12px;
-            color: #444;
-        }
-        .highlight-box {
-            background: #F0F4F8;
-            padding: 24px;
-            border-radius: 8px;
-            margin: 30px 0;
-            border-left: 4px solid var(--color-accent);
-        }
-        
-        /* Review Section */
-        .review {
-            margin-bottom: 60px;
-            border-top: 1px solid var(--color-border);
-            padding-top: 60px;
-        }
-        .review h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 1.8rem;
-        }
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-        }
-        .review-card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid var(--color-border);
-        }
-        .rating {
-            color: #FFD700;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-        .review-text {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 20px;
-            display: block;
-        }
-        .reviewer {
             font-weight: 600;
             font-size: 0.9rem;
         }
 
-        /* Footer / CTA */
-        .cta-section {
-            background: #1A1A1A;
-            color: #fff;
-            padding: 60px 0;
-            text-align: center;
-            border-radius: 12px;
-            margin-bottom: 60px;
+        .cta-button:hover {
+            opacity: 0.8;
         }
-        .cta-section h2 {
-            margin-bottom: 20px;
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
         }
-        .btn-tel {
-            display: inline-block;
-            background: #fff;
-            color: #000;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-text);
+        }
+
+        /* Content Styles */
+        main {
+            margin-top: var(--header-height);
+            padding: 4rem 0;
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .article-category {
+            font-size: 0.85rem;
+            color: var(--color-text-sub);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: var(--color-text-sub);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-content h2 {
+            font-size: 1.8rem;
             font-weight: 700;
-            margin-top: 20px;
-            transition: transform 0.2s;
+            margin: 3rem 0 1.5rem;
+            letter-spacing: -0.03em;
         }
-        .btn-tel:hover {
-            transform: scale(1.05);
+
+        .article-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-left: 4px solid var(--color-accent);
+            margin: 2rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .cost-table th, .cost-table td {
+            border: 1px solid var(--color-border);
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .cost-table th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+        }
+
+        blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--color-text-sub);
+            border-left: 2px solid var(--color-border);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .faq-section {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-question::before {
+            content: 'Q.';
+            margin-right: 10px;
+            color: var(--color-accent);
+        }
+
+        .faq-answer {
+            color: var(--color-text-sub);
+            padding-left: 2.2rem;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            padding: 4rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-info p {
+            font-size: 0.9rem;
+            color: var(--color-text-sub);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: var(--color-text-sub);
+            margin-right: 1.5rem;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav ul { display: none; }
-            .nav-mobile { display: block; }
-            .hero h1 { font-size: 2rem; }
-            .grid-item { padding: 24px; }
-            .grid { gap: 20px; }
+            .nav-links {
+                display: none; /* JS 토글 필요시 구현 */
+            }
+            .hamburger {
+                display: flex;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .article-content {
+                font-size: 1rem;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container nav-inner">
-            <a href="/" class="nav-logo">BPAAS</a>
-            <ul class="nav-desktop">
-                <li><a href="/">홈</a></li>
-                <li><a href="/portfolio">포트폴리오</a></li>
-                <li><a href="/process">제작 과정</a></li>
-                <li><a href="/blog" style="color:var(--color-accent); font-weight:600;">블로그</a></li>
-                <li><a href="tel:01062790862" class="nav-cta">010-6279-0862</a></li>
-            </ul>
-            <div class="nav-mobile" style="display:none;">
-                <a href="tel:01062790862" style="text-decoration:none; color:#000; font-weight:700;">상담하기</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        
-        <!-- Hero Header -->
-        <header class="hero">
-            <h1>고양 홈페이지 제작 비용,<br>도대체 얼마가 적정일까요?</h1>
-            <p>웹에이전시에 따라 100 만 원에서 1,000 만 원까지 천차만별인 견적.<br>고양에서 홈페이지를 준비하는 사장님을 위해, <br>현실적인 비용 가이드를 준비했습니다.</p>
-        </header>
-
-        <!-- Blog Article Grid -->
-        <section class="grid">
-            <article class="grid-item blog-content">
-                <p style="color:#888; font-size:0.9rem; margin-bottom:10px;">2024. 05. 21 | 카테고리: 제작 가이드</p>
-                
-                <p>안녕하세요, 고양 지역에서 홈페이지 제작을 돕고 있는 BPAAS 입니다. 오늘 아침에도 한 사장님께서 전화를 주셨어요.</p>
-                
-                <p>"여기저기 견적 받아봤는데, 왜 이렇게 가격 차이가 큰 거예요? 50 만 원이라는 곳도 있고, 300 만 원이라는 곳도 있는데..."</p>
-                
-                <p>맞아요, 정말 혼란스럽죠. 마치 새차를 사는데 옵션 하나 없는 차와 풀옵션 차의 가격 차이를 모르고 고르는 것과 비슷합니다. 오늘은 <strong>'고양 홈페이지 제작 비용'</strong>이 어떻게 책정되는지, 그리고 우리가 진짜 신경 써야 할 부분이 어디인지 솔직하게 이야기해 보려 합니다.</p>
-
-                <h2>1. "싸게" 만드는 것과 "잘" 만드는 것의 차이</h2>
-                <p>인터넷에 떠도는 초저가 견적 (예: 30~50 만 원대) 은 대부분 '템플릿'을 살짝 수정하는 수준입니다. 디자인은 남들과 비슷하고, 기능도 정해진 것만 쓸 수 있죠.</p>
-                <p>반면, <strong>기획형 홈페이지</strong>는 우리 브랜드의 철학을 담습니다.</p>
-                <ul>
-                    <li><strong>반응형 웹:</strong> 모바일, 태블릿, PC 어디서든 깨지지 않고 보이는가?</li>
-                    <li><strong>SEO (검색최적화):</strong> '고양 OO 동' 같은 지역 키워드로 검색될 때 상위에 노출될 구조인가?</li>
-                    <li><strong>관리 편의성:</strong> 비전공자인 사장님이 직접 사진을 올리고 글을 수정하기 쉬운가?</li>
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">BPAAS.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/about">회사 소개</a></li>
+                    <li><a href="/portfolio">포트폴리오</a></li>
+                    <li><a href="/blog" style="font-weight: 700;">블로그</a></li>
+                    <li><a href="/contact">문의하기</a></li>
                 </ul>
-                <p>이 세 가지만 확보해도 비용은 달라집니다. 하지만 장기적인 브랜드 가치를 생각한다면, 이 투자는 필수입니다.</p>
+                <a href="tel:031-123-4567" class="cta-button">031-123-4567</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <article class="container">
+            <div class="article-header">
+                <span class="article-category">Industry Insight / Cost Analysis</span>
+                <h1>고양 홈페이지 제작 비용, 왜 이렇게 천차만별일까요?</h1>
+                <div class="article-meta">
+                    <span>작성일: 2024. 05. 21</span>
+                    <span>작성자: BPAAS 대표</span>
+                    <span>읽는 시간: 5 분</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>안녕하세요, 고양시에서 웹 에이전시를 운영 중인 BPAAS 대표입니다.</p>
+                <p>최근 상담을 오시는 고양이 지역 사장님들과 대화를 나누다 보면, 가장 먼저 하시는 질문이 바로 이겁니다.</p>
+                <blockquote>"대표님, 혹시 홈페이지 하나 만들려면 대체 얼마 정도 들어가요?"</blockquote>
+                <p>저조차도 선뜻 "OO 만 원입니다"라고 대답하기가 참 어렵습니다. 마치 "집 한 채 지으려면 얼마예요?"라고 묻는 것과 비슷하거든요. 아파트일까요, 빌라일까요, 아니면 단독주택일까요?</p>
+                <p>오늘은 업계의 숨겨진 이야기와 함께, <strong>고양 홈페이지 제작 비용</strong>이 어떻게 형성되는지, 그리고 어떤 함정을 피해야 하는지 솔직하게 풀어보려 합니다.</p>
+
+                <h2>1. 30 만 원과 300 만 원의 차이</h2>
+                <p>검색창에 '홈페이지 제작'을 치면 정말 다양한 견적이 나옵니다. 30 만 원짜리 템플릿부터 300 만 원이 넘는 맞춤형 개발까지요. 이 가격 차이는 어디서 오는 걸까요?</p>
+                
                 <div class="highlight-box">
-                    <strong>💡 BPAAS 의 팁:</strong>
-                    <p>단순히 "홈페이지 만들어주세요"라고 하면 견적이 부정확할 수밖에 없습니다. "우리 타겟은 3040 여성이고, 주요 기능은 예약 시스템이 필요해요"라고 구체적으로 말씀주시면 훨씬 정확한 '고양 홈페이지 제작 비용'을 안내해 드릴 수 있습니다.</p>
+                    <strong>핵심 요약:</strong> 저렴함의 대가는 '유지보수'와 '확장성'입니다. 초기 비용만 보고 선택했다가 1 년 뒤에 사이트를 통째로 다시 만드는 경우를 너무 많이 봤습니다.
                 </div>
 
-                <h2>2. 고양 지역 특화 전략이 포함된가요?</h2>
-                <p>일산, 주교, 행신 등 고양시는 상권이 매우 다양합니다. 단순히 예쁜 홈페이지가 아니라, <strong>지역 고객이 찾아오게 만드는 홈페이지</strong>여야 합니다.</p>
-                <p>저희는 제작 비용에 다음과 같은 지역 마케팅 요소를 기본으로 포함하려고 노력합니다.</p>
-                <ul>
-                    <li>네이버 지도 (스마트플레이스) 연동 최적화</li>
-                    <li>지역 키워드 (예: 고양시 원당동 카페, 일산서구 헬스장 등) 메타태그 설정</li>
-                    <li>빠른 로딩 속도 (모바일 데이터 환경 고려)</li>
-                </ul>
+                <p>보통 시장의 가격대는 크게 세 구간으로 나뉩니다.</p>
+                
+                <table class="cost-table">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>예상 비용</th>
+                            <th>특징</th>
+                            <th>추천 대상</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>템플릿형</td>
+                            <td>30 ~ 80 만 원</td>
+                            <td>기존 디자인 수정, 기능 제한적</td>
+                            <td>단순 소개용, 예산이 극도로 부족한 경우</td>
+                        </tr>
+                        <tr>
+                            <td>반커스텀형</td>
+                            <td>100 ~ 200 만 원</td>
+                            <td>브랜드 색상/로고 적용, 기본 SEO 최적화</td>
+                            <td>중소기업, 오프라인 매장 홍보용</td>
+                        </tr>
+                        <tr>
+                            <td>풀커스텀형</td>
+                            <td>250 만 원 이상</td>
+                            <td>독자적 UI/UX, 복잡한 기능 구현</td>
+                            <td>스타트업, 웹 서비스 런칭, 브랜드 리뉴얼</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <h2>3. 결론: 비용보다 중요한 것은 '소통'입니다</h2>
-                <p>결국 홈페이지 제작 비용은 '누구와 만나는가'에 따라 결정됩니다. 이름을 부르기 힘든 외주 업체에 맡겨 소통이 안 되면, 수정 요청 하나에도 추가 비용이 발생하거나 시간이 무한정 늘어날 수 있습니다.</p>
-                <p>저희 BPAAS 는 고양 인근에서 직접 만나 커피 한 잔 하며 아이디어를 나누는 것을 선호합니다. 복잡한 용어 대신, 사장님의 비즈니스를 가장 잘 표현할 수 있는 방법을 함께 찾아가겠습니다.</p>
+                <h2>2. 고양 지역 사장님들이 자주 겪는 '견적 함정'</h2>
+                <p>일산이나 덕양구 인근의 업체들과 작업을 하다 보면, 초기 견적에는 포함되지 않았던 비용들이 나중에 청구되는 경우가 많습니다. 소위 '옵션 놀음'이라고도 하죠.</p>
+                
+                <h3>함정 1: "반응형은 별도입니다"</h3>
+                <p>2024 년에 모바일 최적화 (반응형) 가 안 된 사이트는 존재 가치가 없습니다. 하지만 일부 저가 업체는 이를 별도 항목으로 빼서 견적을 낮게 제시합니다. 꼭 포함 여부를 확인하세요.</p>
 
-                <p>지금 바로 비용이 궁금하신가요? 부담 없이 연락 주세요. 견적은 공짜입니다. 😉</p>
-            </article>
-        </section>
+                <h3>함정 2: "유지보수 비용이 비싸요"</h3>
+                <p>사이트 오픈 후 1 년은 무료인데, 2 년 차부터 연간 비용이 제작비의 30% 를 요구하는 경우도 있습니다. 계약서 상의 유지보수 조항을 꼼꼼히 체크해야 합니다.</p>
 
-        <!-- Reviews -->
-        <section class="review">
-            <h2>사장님들의 솔직한 후기</h2>
-            <div class="review-grid">
-                <div class="review-card">
-                    <div class="rating">★★★★★</div>
-                    <span class="review-text">"다른 곳은 견적만 주고 연락이 두절됐는데, 여기는 제작 과정 내내 꼼꼼하게 소통해 줬어요. 특히 모바일 화면 수정이 정말 빨랐습니다."</span>
-                    <div class="reviewer">일산동구 A 대표님</div>
-                </div>
-                <div class="review-card">
-                    <div class="rating">★★★★★</div>
-                    <span class="review-text">"예산이 limited 했는데, 필요한 기능 위주로 잘 짜주셔서 만족합니다. 오픈 후 문의 전화가 확실히 늘었어요."</span>
-                    <div class="reviewer">백석동 B 원장님</div>
-                </div>
-                <div class="review-card">
-                    <div class="rating">★★★★☆</div>
-                    <span class="review-text">"디자인이 세련되고 깔끔해요. 처음엔 비싸다고 생각했는데, 사용해보니 관리가 너무 편해서 돈 아까운 생각이 안 듭니다."</span>
-                    <div class="reviewer">행신동 C 실장님</div>
-                </div>
-            </div>
-        </section>
+                <h3>함정 3: "도메인과 호스팅, 누가 소유하나요?"</h3>
+                <p>가장 위험한 경우입니다. 업체 명의로 도메인을 등록해두면, 나중에 업체를 변경하고 싶어도 사이트를 가져올 수 없습니다. <strong>반드시 사장님 명의</strong>로 등록해야 합니다.</p>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>고양 홈페이지 제작, 이제 고민 끝내세요.</h2>
-            <p>최고의 비용으로 최고의 퀄리티를 약속드립니다.</p>
-            <a href="tel:01062790862" class="btn-tel">010-6279-0862 무료 상담하기</a>
-        </section>
+                <h2>3. 현명한 비용 절감법</h2>
+                <p>그렇다고 무조건 비싼 게 정답은 아닙니다. 예산을 아끼면서도 퀄리티를 높이는 팁을 드립니다.</p>
+                <p>첫째, <strong>콘텐츠 (사진, 글) 를 직접 준비</strong>하세요. 기획 단계에서 자료 확보가 늦어지면 인건비가 그대로 견적에 반영됩니다.<br>
+                둘째, <strong>기능을 최소화</strong>하세요. 오픈 초기에 꼭 필요한 기능만 넣고, 추후 업데이트하는 방식이 훨씬 효율적입니다.</p>
 
-    </main>
+                <div class="faq-section">
+                    <h2>자주 묻는 질문 (FAQ)</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">고양시 내 미팅이 가능한가요?</div>
+                        <div class="faq-answer">네, 일산과 덕양구 지역은 직접 방문 미팅이 가능합니다. 복잡한 요구사항은 대면으로 논의하는 것이 가장 빠릅니다.</div>
+                    </div>
 
-    <!-- Footer -->
-    <footer style="background:#fff; border-top:1px solid #eee; padding:40px 0; text-align:center; color:#888; font-size:0.9rem;">
-        <div class="container">
-            <p>&copy; 2024 BPAAS. All rights reserved.</p>
-            <p>고양 홈페이지 제작 전문 | 사업자등록번호: 000-00-00000</p>
-            <p>주소: 경기도 고양시 일산동구 (예시주소) | 대표: 홍길동</p>
-        </div>
-    </footer>
+                    <div class="faq-item">
+                        <div class="faq-question">제작 기간은 얼마나 걸리나요?</div>
+                        <div class="faq-answer">일반적인 기업 홈페이지 기준 3~4 주 정도 소요됩니다. 콘텐츠 준비 상황에 따라 단축되거나 연장될 수 있습니다.</div>
+                    </div>
 
+                    <div class="faq-item">
+                        <div class="faq-question">SEO(검색최적화) 도 해주나요?</div>
+                        <div
 </body>
 </html>

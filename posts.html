@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · kr-pbn-bp-017</title>
+  <meta name="description" content="kr-pbn-bp-017에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://goyang-web-marketing.pbn-builder.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* [압축된 CSS - 이전 페이지와 동일한 디자인 시스템] */
+ :root {
+ --font-main: 'Suisse Int', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+ --font-mono: 'Suisse Mono', 'Courier New', monospace;
+ --bg-color: #ffffff;
+ --text-main: #111111;
+ --text-sub: #666666;
+ --accent: #000000;
+ --border-light: #e5e5e5;
+ --spacing-unit: 24px;
+ --container-width: 1200px;
+ --header-height: 80px;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: var(--font-main);
+ background-color: var(--bg-color);
+ color: var(--text-main);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ a { text-decoration: none; color: inherit; transition: opacity 0.2s; }
+ a:hover { opacity: 0.6; }
+ ul { list-style: none; }
+ img { max-width: 100%; height: auto; display: block; }
+ 
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-unit);
+ }
+
+ /* Header & Nav */
+ header {
+ height: var(--header-height);
+ border-bottom: 1px solid var(--border-light);
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background: rgba(255,255,255,0.95);
+ backdrop-filter: blur(10px);
+ z-index: 1000;
+ }
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 100%;
+ }
+ .logo {
+ font-size: 20px;
+ font-weight: 700;
+ letter-spacing: -0.5px;
+ }
+ .nav-links {
+ display: flex;
+ gap: 40px;
+ }
+ .nav-links a {
+ font-size: 14px;
+ font-weight: 500;
+ color: var(--text-sub);
+ }
+ .nav-links a.active { color: var(--text-main); text-decoration: underline; }
+ 
+ .cta-button {
+ background-color: var(--accent);
+ color: #fff;
+ padding: 10px 24px;
+ font-size: 14px;
+ border-radius: 4px;
+ font-weight: 600;
+ }
+ .cta-button:hover { opacity: 0.8; color: #fff; }
+
+ .hamburger { display: none; cursor: pointer; }
+ .hamburger span {
+ display: block;
+ width: 24px;
+ height: 2px;
+ background: var(--text-main);
+ margin: 5px 0;
+ }
+
+ /* Content Styles */
+ section { padding: 120px 0; border-bottom: 1px solid var(--border-light); }
+ h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 24px; line-height: 1.2; }
+ h2 { font-size: 32px; font-weight: 600; letter-spacing: -1px; margin-bottom: 32px; margin-top: 60px; }
+ h3 { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+ p { font-size: 18px; color: var(--text-sub); margin-bottom: 24px; font-weight: 300; }
+ .lead { font-size: 24px; line-height: 1.5; color: var(--text-main); }
+ 
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+ .card {
+ border: 1px solid var(--border-light);
+ padding: 40px;
+ border-radius: 8px;
+ background: #f9f9f9;
+ }
+ .highlight-box {
+ background: #111;
+ color: #fff;
+ padding: 60px;
+ border-radius: 12px;
+ margin: 60px 0;
+ }
+ .highlight-box p { color: #999; }
+ .highlight-box h3 { color: #fff; }
+
+ .faq-item {
+ border-top: 1px solid var(--border-light);
+ padding: 30px 0;
+ }
+ .faq-item h4 {
+ font-size: 18px;
+ font-weight: 600;
+ margin-bottom: 12px;
+ cursor: pointer;
+ }
+ 
+ footer {
+ padding: 80px 0;
+ background: #f5f5f5;
+ text-align: center;
+ }
+ .footer-text { font-size: 14px; color: #888; }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ h1 { font-size: 32px; }
+ .grid-2 { grid-template-columns: 1fr; gap: 30px; }
+ .nav-links { display: none; }
+ .hamburger { display: block; }
+ .container { padding: 0 20px; }
+ section { padding: 80px 0; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · kr-pbn-bp-017">
+  <meta property="og:description" content="kr-pbn-bp-017에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://goyang-web-marketing.pbn-builder.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-container">
+ <a href="#" class="logo">BP.KR</a>
+ <nav class="nav-links">
+ <a href="#">홈</a>
+ <a href="#">서비스</a>
+ <a href="#">포트폴리오</a>
+ <a href="#" class="active">비용 안내</a>
+ <a href="#">블로그</a>
+ </nav>
+ <div style="display: flex; gap: 20px; align-items: center;">
+ <a href="tel:031-000-0000" class="cta-button" style="display: none; @media(min-width:768px){display:block;}">무료 견적 상담</a>
+ <div class="hamburger">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ </div>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 32개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1137.html">고양 홈페이지 제작 비용 이용자가 확인할 정보 페이지 기준</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용를 확인할 때 먼저 볼 부분은 화려한 문구가 아니라 실제로 비교 가능한 조건입니다. 고양 주변 정보는 비슷한 표현이 많아서, 어떤 기준으로 읽느냐에 따라 판단의 정확도가 크게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0337.html">고양 홈페이지 제작 비용, 구글 틈새 키워드 트래픽 외환 거래 전략의 시작</a>
+        <p class="post-item__summary">최근 고양시에서 소규모 사업을 시작한 김 사장님은 고양 홈페이지 제작 비용에 대한 고민이 많았습니다. 마케팅 채널 확장을 위해 웹사이트는 필수였지만, 초기 투자 비용이 부담스러웠기 때문입니다. 수십</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0338.html">고양 홈페이지 제작 비용 분석과 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">흔히 단체 모임을 위한 장소를 예약할 때 늦은 밤 시간이 가장 화려하고 대접이 좋을 것이라 오해하곤 합니다. 그러나 고양 홈페이지 제작 비용 산정 시 효율성을 따지는 것처럼, 모임 예약 시간대 선택</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0339.html">고양 홈페이지 제작 비용 탐색 및 안전한 셔츠룸 예약 핵심 가이드</a>
+        <p class="post-item__summary">모임의 성격에 적합한 공간을 정하려면 구성원의 성향, 보안 수준, 그리고 가용 예산이 완벽히 만족되어야 합니다. 마치 고양 홈페이지 제작 비용 구조를 꼼꼼하게 따져보듯, 최적의 사교 모임을 조성할 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0340.html">고양 홈페이지 제작 비용 및 구글 알고리즘 고신용 도메인 보증 카드 발급</a>
+        <p class="post-item__summary">웹사이트의 노출 순위를 안정적으로 높이기 위해 현재 도메인의 평판과 신뢰도를 어떻게 측정하고 계십니까? 보통 고양 홈페이지 제작 비용 계산에만 몰두하여 도메인의 핵심 가치 조율 과정을 간과하기 쉽습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0341.html">고양 홈페이지 제작 비용: 마포 노래방 가격 정보 신뢰도 판별</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용에 대한 정보를 알아보면서, 실제 후기를 접할 때 그 신뢰도를 어떻게 판별해야 할지 고민하시는 분들이 많습니다. 온라인상에는 다양한 후기가 존재하지만, 모든 정보가 정확하고 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0342.html">고양 홈페이지 제작 비용과 4</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용에 대한 정보를 찾으시는 분들이 많습니다. 하지만 급변하는 기술 환경 속에서 새로운 학습 기회를 찾는 것도 중요합니다. 특히 최근 주목받고 있는 4-에이전트 루프 자동화 프로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0343.html">고양 홈페이지 제작 비용과 마포 셔츠룸 예약 시 눈탱이 피하는 법</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용에 대한 고민이 있으신가요? 온라인에서의 경쟁력을 강화하기 위해 웹사이트 제작을 고려하는 것은 당연한 수순입니다. 하지만 때로는 특정 지역의 서비스 이용 시 발생할 수 있는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0344.html">고양 홈페이지 제작 비용 절감과 자세한 내용</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용 측면에서 예산을 합리적으로 설계하더라도, 제작 이후 온라인상에서 노출되지 않으면 무용지물입니다. 고양시 덕양구처럼 물리적인 위치와 접근성이 우수한 곳에 매장을 여는 것처럼 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0345.html">고양 홈페이지 제작 비용 분석 및 마포 럭셔리 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용 계획을 세우다가도, 비즈니스 파트너들과의 중요한 모임을 앞두고 적절한 접대 장소를 찾지 못해 곤혹을 치르곤 합니다. 격식 있는 자리나 대형 행사를 위해 예약이 치열한 중심가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0346.html">고양 홈페이지 제작 비용과 도메인 파워용 구글 신뢰 지수 모발이식 솔루션</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용 투자를 늘리면 무조건 노출 빈도가 급상승하고 사이트가 활성화된다는 믿음은 흔한 오해입니다. 자금을 대거 투입해 페이지를 꾸미더라도, 구글이 평가하는 알고리즘의 신뢰 기준을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0347.html">고양 홈페이지 제작 비용: 마포 유흥 가격 투명성 감시 디렉토리</a>
+        <p class="post-item__summary">성공적인 온라인 사업을 위해서는 웹사이트 구축이 필수적입니다. 특히 고양 홈페이지 제작 비용을 알아보시는 분들은 디자인, 기능, 유지보수 등 다양한 요소를 고려해야 합니다. 하지만 이와는 별개로, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0496.html">고양 홈페이지 제작 비용 절약하는 마포/합정 인디 소셜 라운지 가이드 활용</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용을 검토하다 보면 생각보다 높은 초기 견적에 당황하는 경우가 많습니다. 합리적인 예산 안에서 효율을 극대화하려면 웹사이트 목적과 부합하는 외부 인프라를 잘 활용해야 합니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0497.html">고양 홈페이지 제작 비용 절감하듯 풋쌤 동대문점 마사지 이용하는 법</a>
+        <p class="post-item__summary">창업을 준비하며 고양 홈페이지 제작 비용을 비교하다 보면 의외의 지출로 고생하는 경우가 많습니다. 예산 안에서 최적의 결과를 내기 위해 꼼꼼히 따져보는 습관은 일상적인 서비스 이용에도 적용됩니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0498.html">고양 홈페이지 제작 비용 비교만큼 중요한 마포 홍대 로컬 럭셔리 밤문화 가이드</a>
+        <p class="post-item__summary">많은 분이 마포 홍대 지역을 방문할 때 무조건 비싼 곳이 좋다는 오해를 하곤 합니다. 마치 고양 홈페이지 제작 비용을 산정할 때 비싼 단가가 항상 높은 퀄리티를 보장하지 않는 것과 같은 이치입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0499.html">고양 홈페이지 제작 비용 확인하듯 마포 셔츠룸 리얼 후기 소셜 마케팅 가이드 활용</a>
+        <p class="post-item__summary">성공적인 비즈니스와 유흥 문화에는 몇 가지 공통된 충족 조건이 존재합니다. 명확한 목표 설정, 정확한 데이터 분석, 그리고 신뢰할 수 있는 소스 확보가 그것입니다. 고양 홈페이지 제작 비용을 꼼꼼히</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0500.html">고양 홈페이지 제작 비용 체크와 해당 사이트 비교</a>
+        <p class="post-item__summary">웹사이트를 운영하며 검색 엔진 순위에 급격한 변화를 겪고 계신가요? 고양 홈페이지 제작 비용을 투자해 사이트를 구축한 후, 왜 기대한 만큼의 유입이 일어나지 않는지 고민해 본 적이 있으신가요? 보이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0056.html">고양 홈페이지 제작 비용 절약하듯 연남 클럽 추천정보 방문 전 체크리스트</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용을 절약하기 위해 업체마다 견적과 성능을 비교하듯, 연남 클럽을 방문할 때도 위치와 접근성을 따져보는 것이 시간과 체력을 아끼는 길입니다. 연남 지역은 골목이 많고 대중교통 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0057.html">고양 홈페이지 제작 비용 절감 전략과 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">사업을 준비하다 보면 고양 홈페이지 제작 비용 산출에 많은 고민을 하게 됩니다. 초기 투자금을 최소화하면서도 가독성을 확보하는 작업은 마치 낯선 환경에서 신뢰할 수 있는 장소를 찾는 과정과 흡사합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0058.html">고양 홈페이지 제작 비용 분석과 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">고양 홈페이지 제작 비용을 단순히 저렴한 곳만 찾으면 성공할 것이라는 오해를 하는 경영자들이 많습니다. 무조건 싼 가격이 최선이 아니듯, 유흥 문화 역시 비용보다 서비스의 질적 가치가 중요합니다. </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
